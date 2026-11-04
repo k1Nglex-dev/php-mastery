@@ -2,8 +2,17 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// PHPUNIT - CALCULATOR TEST
+// PHP Mastery - Educational examples
+// ============================================================
+
 use PHPUnit\Framework\TestCase;
 
+// ------------------------------------------------------------
+// 01. DISCOUNT ASSERTION
+// Verify the final amount after applying a discount.
+// ------------------------------------------------------------
 final class CalculatorTest extends TestCase
 {
     public function testCalculPretCuDiscount(): void

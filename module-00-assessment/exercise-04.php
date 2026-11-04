@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// ASSESSMENT 04 - ORDERS
+// PHP Mastery - Educational examples
+// ============================================================
+
+// ------------------------------------------------------------
+// 01. SAMPLE ORDERS
+// Orders with statuses and line items.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 01. SAMPLE ORDERS ==========' . PHP_EOL;
+
 $orders = [
     [
         'id' => 1,
@@ -30,6 +41,10 @@ $orders = [
     ],
 ];
 
+// ------------------------------------------------------------
+// 02. ORDER TOTAL FUNCTION
+// Sum quantity multiplied by price for every item.
+// ------------------------------------------------------------
 function calculateOrderTotal(array $order): int
 {
     $total = 0;
@@ -39,9 +54,21 @@ function calculateOrderTotal(array $order): int
     return $total;
 }
 
+// ------------------------------------------------------------
+// 03. REVENUE TRACKING
+// Count confirmed and pending orders.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 03. REVENUE TRACKING ==========' . PHP_EOL;
+
 $totalRevenue = 0;
 $confirmedCount = 0;
 $pendingCount = 0;
+
+// ------------------------------------------------------------
+// 04. PROCESS ORDERS
+// Include only confirmed orders in revenue.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 04. PROCESS ORDERS ==========' . PHP_EOL;
 
 foreach ($orders as $order) {
     if ($order['status'] === 'confirmed') {
@@ -55,6 +82,12 @@ foreach ($orders as $order) {
         $pendingCount++;
     }
 }
+
+// ------------------------------------------------------------
+// 05. ORDER SUMMARY
+// Display revenue and order counts.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 05. ORDER SUMMARY ==========' . PHP_EOL;
 
 echo 'Venit total: ' . $totalRevenue . PHP_EOL;
 echo 'Comenzi confirmate: ' . $confirmedCount . PHP_EOL;

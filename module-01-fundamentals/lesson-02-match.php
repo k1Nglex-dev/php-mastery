@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// LESSON 02 - MATCH EXPRESSIONS
+// PHP Mastery - Educational examples
+// ============================================================
+
+// ------------------------------------------------------------
+// 01. ORDER STATUS
+// Map order statuses to readable messages.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 01. ORDER STATUS ==========' . PHP_EOL;
+
 $orderStatus = 'shipped';
 
 $message = match ($orderStatus) {
@@ -13,6 +24,12 @@ $message = match ($orderStatus) {
 };
 
 echo $message . PHP_EOL;
+
+// ------------------------------------------------------------
+// 02. HTTP STATUS
+// Group HTTP response codes by meaning.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 02. HTTP STATUS ==========' . PHP_EOL;
 
 $httpStatus = 999;
 

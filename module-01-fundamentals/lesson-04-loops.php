@@ -3,25 +3,25 @@
 declare(strict_types=1);
 
 
-//===========  FOR  ============
+//===========  FOR
 
-for ($i = 1; $i <= 20 ; $i++) {
+for ($i = 1; $i <= 20; $i++) {
     $remainder = $i % 2;
     if ($remainder === 0) {
         echo $i . PHP_EOL;
     }
-};
+}
 
-//===========  WHILE  ============
+//===========  WHILE
 
-$a = 17;
+$countDown = 17;
 
-while ($a > 0) {
-    echo $a . PHP_EOL;
-    $a--;
-};
+while ($countDown > 0) {
+    echo $countDown . PHP_EOL;
+    $countDown--;
+}
 
-//===========  DO .... WHILE  ============
+//===========  DO .... WHILE
 
 $counter = 1;
 do {
@@ -29,7 +29,7 @@ do {
     $counter++;
 } while ($counter <= 5);
 
-//=========== BREAK ============
+//=========== BREAK
 
 for ($i = 1; $i <= 20; $i++) {
     if ($i === 8) {
@@ -38,6 +38,7 @@ for ($i = 1; $i <= 20; $i++) {
     echo $i . PHP_EOL;
 }
 
+//=========== CONTINUE
 
 for ($i = 1; $i <= 10; $i++) {
     if ($i === 5) {
@@ -46,12 +47,13 @@ for ($i = 1; $i <= 10; $i++) {
     echo $i . PHP_EOL;
 }
 
+//=========== FOREACH
+
 $prices = [10, 25, 15, 30];
 
 foreach ($prices as $price) {
     echo $price . PHP_EOL;
 }
-
 
 $user = [
     'name' => 'Alex',
@@ -64,12 +66,12 @@ foreach ($user as $key => $value) {
 }
 
 
+//=========== ACCUMULATOR cu +=
 $prices = [15, 25, 10, 50];
 $totalPrices = 0;
 
 foreach ($prices as $price) {
     $totalPrices += $price;
-
 }
 echo $totalPrices . PHP_EOL;
 
@@ -83,20 +85,4 @@ foreach ($numbers as $number) {
     }
 }
 echo 'Total: ' . $total . PHP_EOL;
-
-$products = ['Bread', 'Milk', 'Eggs'];
-
-$products[] = 'Butter';
-$products[1] = 'Cheese';
-unset($products[2]);
-$products[] = 'Sugar';
-print_r($products);
-echo '==============' . PHP_EOL;
-$products = array_values($products);
-print_r($products);
-
-$prices = [10, 20, 30, 40, 50];
-unset($prices[2]);
-$totalPrices = array_sum($prices);
-echo $totalPrices . PHP_EOL;
-echo count($prices);
+echo PHP_EOL;

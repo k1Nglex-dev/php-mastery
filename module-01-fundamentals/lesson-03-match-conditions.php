@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// LESSON 03 - MATCH CONDITIONS
+// PHP Mastery - Educational examples
+// ============================================================
+
+// ------------------------------------------------------------
+// 01. MATCH TRUE
+// Select an age category using boolean conditions.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 01. MATCH TRUE ==========' . PHP_EOL;
+
 $age = 150;
 
 $category = match (true) {

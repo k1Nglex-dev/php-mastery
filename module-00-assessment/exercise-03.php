@@ -2,6 +2,15 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// ASSESSMENT 03 - FUNCTIONS
+// PHP Mastery - Educational examples
+// ============================================================
+
+// ------------------------------------------------------------
+// 01. MULTIPLICATION
+// Multiply two integers.
+// ------------------------------------------------------------
 function multiply(int $a, int $b): int
 {
     return $a * $b;
@@ -16,7 +25,10 @@ echo $result . PHP_EOL;
 $result = multiply(7, 0);
 echo $result . PHP_EOL;
 
-
+// ------------------------------------------------------------
+// 02. TAX CALCULATION
+// Calculate the tax amount from a percentage.
+// ------------------------------------------------------------
 function calculateTax(float $price, float $taxPercentage): float
 {
     return $price * $taxPercentage / 100;
@@ -31,6 +43,10 @@ echo $result . PHP_EOL;
 $result = calculateTax(99.99, 5);
 echo $result . PHP_EOL;
 
+// ------------------------------------------------------------
+// 03. DISCOUNT VALIDATION
+// Validate inputs and calculate a discounted price.
+// ------------------------------------------------------------
 function calculateDiscount(float $price, float $percentage): float
 {
     if ($price < 0) {
@@ -47,7 +63,10 @@ echo calculateDiscount(150, 20) . PHP_EOL;
 echo calculateDiscount(100, 0) . PHP_EOL;
 echo calculateDiscount(100, 100) . PHP_EOL;
 
-
+// ------------------------------------------------------------
+// 04. INVALID INPUT TESTS
+// Handle invalid discount arguments with exceptions.
+// ------------------------------------------------------------
 try {
     echo calculateDiscount(-100, 20);
 } catch (InvalidArgumentException $exception) {

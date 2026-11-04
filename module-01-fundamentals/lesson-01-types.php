@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+// ============================================================
+// LESSON 01 - DATA TYPES
+// PHP Mastery - Educational examples
+// ============================================================
+
+// ------------------------------------------------------------
+// 01. BASIC DATA TYPES
+// Inspect int, float, string, bool, array and null.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 01. BASIC DATA TYPES ==========' . PHP_EOL;
+
 $age = 25;
 $price = 19.99;
 $name = 'Alex';
@@ -15,6 +26,12 @@ echo get_debug_type($name) . PHP_EOL;
 echo get_debug_type($isActive) . PHP_EOL;
 echo get_debug_type($products) . PHP_EOL;
 echo get_debug_type($discount) . PHP_EOL;
+
+// ------------------------------------------------------------
+// 02. TYPE CASTING
+// Convert numeric strings to float and int.
+// ------------------------------------------------------------
+echo PHP_EOL . '========== 02. TYPE CASTING ==========' . PHP_EOL;
 
 $price = '49.99';
 $quantity = '3';

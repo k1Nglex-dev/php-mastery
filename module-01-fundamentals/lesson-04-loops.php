@@ -12,6 +12,8 @@ declare(strict_types=1);
 // Afiseaza numerele pare de la 1 la 20.
 // ------------------------------------------------------------
 
+echo PHP_EOL . '========== 01. FOR LOOP ==========' . PHP_EOL;
+
 for ($i = 1; $i <= 20; $i++) {
     $remainder = $i % 2;
     if ($remainder === 0) {
@@ -23,6 +25,8 @@ for ($i = 1; $i <= 20; $i++) {
 // 02. WHILE LOOP
 // Numara descrescator cat timp conditia este adevarata.
 // ------------------------------------------------------------
+
+echo PHP_EOL . '========== 02. WHILE LOOP ==========' . PHP_EOL;
 
 $countDown = 17;
 
@@ -36,6 +40,8 @@ while ($countDown > 0) {
 // Executa corpul buclei cel putin o data.
 // ------------------------------------------------------------
 
+echo PHP_EOL . '========== 03. DO...WHILE LOOP ==========' . PHP_EOL;
+
 $counter = 1;
 do {
     echo $counter . PHP_EOL;
@@ -46,6 +52,8 @@ do {
 // 04. BREAK
 // Opreste bucla cand contorul ajunge la 8.
 // ------------------------------------------------------------
+
+echo PHP_EOL . '========== 04. BREAK ==========' . PHP_EOL;
 
 for ($i = 1; $i <= 20; $i++) {
     if ($i === 8) {
@@ -59,6 +67,8 @@ for ($i = 1; $i <= 20; $i++) {
 // Sare peste iteratia in care contorul este 5.
 // ------------------------------------------------------------
 
+echo PHP_EOL . '========== 05. CONTINUE ==========' . PHP_EOL;
+
 for ($i = 1; $i <= 10; $i++) {
     if ($i === 5) {
         continue;
@@ -70,6 +80,8 @@ for ($i = 1; $i <= 10; $i++) {
 // 06. FOREACH
 // Parcurge array-uri indexate si asociative.
 // ------------------------------------------------------------
+
+echo PHP_EOL . '========== 06. FOREACH ==========' . PHP_EOL;
 
 $prices = [10, 25, 15, 30];
 
@@ -91,6 +103,8 @@ foreach ($user as $key => $value) {
 // 07. ACCUMULATORS
 // Calculeaza sume folosind foreach si +=.
 // ------------------------------------------------------------
+
+echo PHP_EOL . '========== 07. ACCUMULATORS ==========' . PHP_EOL;
 $prices = [15, 25, 10, 50];
 $totalPrices = 0;
 

@@ -1,47 +1,47 @@
-# PHP Mastery — Jurnal de progres
+# PHP Mastery — Learning Progress Journal
 
-Ultima actualizare: 2026-11-05
+Last updated: 2026-11-05
 
-## Stadiu curent
+## Current Status
 
-- Modul: 01 — Fundamente PHP
-- Lecția curentă: 06 — Introducere în funcții PHP (în desfășurare)
-- Mediu: Windows, VS Code, PHP CLI, Composer, Git
+- Module: 01 — PHP Fundamentals
+- Current lesson: 06 — Introduction to PHP Functions (in progress)
+- Development environment: Windows, VS Code, PHP CLI, Composer, Git
 - Repository: https://github.com/k1Nglex-dev/php-mastery
 
-## Lecții parcurse
+## Lesson Progress
 
-| Lecție | Subiect | Stadiu | Punctaj |
+| Lesson | Topic | Status | Score |
 | --- | --- | --- | --- |
-| 01 | Tipuri de date, conversii, validare numerică și return types | Exemple în repository | Neevaluat formal |
-| 02 | Operatori, condiții și match | Exemple în repository | Neevaluat formal |
-| 03 | Condiții cu match(true) | Exemplu în repository | Neevaluat formal |
-| 04 | Bucle: for, while, do...while, break, continue, foreach | Parcursă | Neevaluat formal |
-| 05 | Array-uri: filtrare, mapare, chei, valori | Parcursă | Neevaluat formal |
-| 06 | Funcții: parametri, argumente, return | În desfășurare | Neevaluat |
+| 01 | Data types, type casting, numeric validation, and return types | Examples available in the repository | Not formally assessed |
+| 02 | Operators, conditions, and match expressions | Examples available in the repository | Not formally assessed |
+| 03 | Conditions using match(true) | Example available in the repository | Not formally assessed |
+| 04 | Loops: for, while, do...while, break, continue, foreach | Covered | Not formally assessed |
+| 05 | Arrays: filtering, mapping, keys, and values | Covered | Not formally assessed |
+| 06 | Functions: parameters, arguments, and return | In progress | Not assessed |
 
-## Exerciții existente
+## Existing Exercises
 
-- module-00-assessment/exercise-01.php până la exercise-04.php
-- exercises/LoginCode.php și exercises/debug-test.php
-- module-01-fundamentals/lesson-01-* până la lesson-05-*
-- tests/CalculatorTest.php
+- `module-00-assessment/exercise-01.php` through `exercise-04.php`
+- `exercises/LoginCode.php` and `exercises/debug-test.php`
+- `module-01-fundamentals/lesson-01-*` through `lesson-05-*`
+- `tests/CalculatorTest.php`
 
-Prezența fișierelor nu echivalează cu promovarea evaluării. Promovarea unui modul necesită minimum 80/100 și demonstrarea înțelegerii.
+The presence of exercise files does not mean the assessments have been passed. Completing a module requires a score of at least 80/100 and demonstrated understanding of the concepts.
 
-## Concepte de consolidat
+## Concepts to Reinforce
 
-- Explicarea diferenței dintre return și echo.
-- Parametri vs. argumente în funcții.
-- Tipuri de parametri și valori returnate.
-- Refactorizarea exercițiilor cu funcții reutilizabile.
+- Explain the difference between `return` and `echo`.
+- Understand parameters versus arguments.
+- Work with parameter types and return types.
+- Refactor exercises into reusable functions.
 
-## Următorul pas
+## Next Step
 
-Continuă Lecția 06 cu verificarea înțelegerii despre return vs. echo, apoi exerciții ghidate. La final, notează exercițiile rezolvate, scorul real și greșelile de corectat.
+Continue Lesson 06 by checking the understanding of `return` versus `echo`, followed by guided exercises. At the end of the lesson, record completed exercises, the actual score, and mistakes to correct.
 
-## Reguli de actualizare
+## Progress Update Rules
 
-- Completează jurnalul după fiecare lecție evaluată.
-- Nu inventa punctaje și nu marca o lecție ca promovată fără verificare.
-- Modificările din GitHub se preiau local prin git pull, după verificarea git status.
+- Update this journal after each assessed lesson.
+- Never invent scores or mark a lesson as passed without verification.
+- Pull GitHub changes locally with `git pull` after checking `git status`.
